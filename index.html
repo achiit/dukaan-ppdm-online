@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Progress Place | Digital Marketing Platform, Agra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0F2A43; --teal:#0E8A7D; --amber:#F2A93B; --bg:#F6F8FA; --card:#FFFFFF; --ink:#14202B; --muted:#5A6B7A; --line:#DCE3EA;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0B1722;--card:#12263A;--ink:#EAF0F5;--muted:#9FB0BF;--line:#244058;--navy:#081521}
+}
+:root[data-theme="dark"]{--bg:#0B1722;--card:#12263A;--ink:#EAF0F5;--muted:#9FB0BF;--line:#244058;--navy:#081521}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:Sora,Manrope,system-ui,sans-serif;line-height:1.2;margin:0 0 .6em}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:var(--navy);color:#fff}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;max-width:1040px;margin:0 auto}
+.brand{font-family:Sora,sans-serif;font-weight:700;font-size:1.15rem;text-decoration:none}
+.brand span{color:var(--amber)}
+.call{background:var(--amber);color:#1b1405;font-weight:700;text-decoration:none;padding:9px 16px;border-radius:8px;font-size:.95rem;white-space:nowrap}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#134566 60%,var(--teal) 130%);color:#fff;padding:56px 0 64px}
+.hero h1{font-size:clamp(1.9rem,5vw,3rem);max-width:17em}
+.hero p{max-width:34em;font-size:1.1rem;color:#D6E4EE;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;font-weight:700;text-decoration:none;padding:13px 24px;border-radius:8px;border:2px solid transparent;font-family:inherit;font-size:1rem;cursor:pointer}
+.btn.primary{background:var(--amber);color:#1b1405}
+.btn.ghost{border-color:rgba(255,255,255,.55);color:#fff}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+section{padding:56px 0}
+h2{font-size:clamp(1.5rem,3.5vw,2rem)}
+.lead{color:var(--muted);max-width:38em;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card h3{font-size:1.05rem;color:var(--teal)}
+.card p{margin:0;color:var(--muted)}
+.steps{counter-reset:s;display:grid;gap:14px;padding:0;margin:0;list-style:none}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.steps li::before{content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--teal);color:#fff;font-weight:700;display:grid;place-items:center;font-family:Sora,sans-serif}
+.steps b{display:block}
+.steps span{color:var(--muted)}
+.founder{display:flex;gap:20px;align-items:center;background:var(--navy);color:#fff;border-radius:14px;padding:26px}
+.avatar{flex:none;width:68px;height:68px;border-radius:50%;background:var(--amber);color:#1b1405;display:grid;place-items:center;font:700 1.5rem Sora,sans-serif}
+.founder p{margin:0;color:#D6E4EE}
+.founder h3{margin:0 0 4px}
+.apply{display:grid;grid-template-columns:1fr;gap:28px}
+@media(min-width:820px){.apply{grid-template-columns:1fr 1.1fr;align-items:start}}
+form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+label{display:block;font-weight:700;font-size:.92rem;margin:0 0 6px}
+input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font:inherit;background:var(--bg);color:var(--ink);margin-bottom:16px}
+.note{font-size:.85rem;color:var(--muted);margin:12px 0 0}
+.info p{margin:0 0 10px}
+.info a{color:var(--teal);font-weight:700}
+.msg{display:none;margin-top:14px;padding:12px 14px;border-radius:8px;background:rgba(14,138,125,.12);color:var(--ink);font-size:.92rem}
+footer{background:var(--navy);color:#B9CBD9;padding:26px 0;font-size:.92rem}
+footer a{color:#fff}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="brand" href="#top">Progress <span>Place</span></a>
+    <a class="call" href="tel:+919340424886">Call 9340424886</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <h1>Digital marketing platform that lets you earn from home</h1>
+    <p>Progress Place connects motivated people with flexible work-from-home opportunities in digital marketing. Apply in two minutes. No sign-up needed.</p>
+    <div class="btns">
+      <a class="btn primary" href="#apply">Apply now</a>
+      <a class="btn ghost" href="tel:+919340424886">Call us</a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Why work with Progress Place</h2>
+    <p class="lead">A simple, guided way to start working in digital marketing without leaving home.</p>
+    <div class="grid">
+      <div class="card"><h3>Work from home</h3><p>Do your work from your own space, with a phone or laptop and an internet connection.</p></div>
+      <div class="card"><h3>Flexible hours</h3><p>Plan your day around your own schedule and your own commitments.</p></div>
+      <div class="card"><h3>Guided start</h3><p>Our team explains the work and supports you when you begin.</p></div>
+      <div class="card"><h3>Open to everyone</h3><p>Students, homemakers and professionals are all welcome to apply.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>How to join</h2>
+    <ol class="steps">
+      <li><div><b>Fill the application form</b><span>Share your name, phone number and email below.</span></div></li>
+      <li><div><b>We contact you</b><span>Our team calls you to explain the work and answer your questions.</span></div></li>
+      <li><div><b>Start working from home</b><span>Begin with our guidance and grow at your own pace.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="founder">
+      <div class="avatar" aria-hidden="true">LS</div>
+      <div>
+        <h3>Mr. Lakshyaraj Singh</h3>
+        <p>Founder, Progress Place. Building a trusted digital marketing platform that gives people in Agra and beyond a way to work from home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apply" style="padding-top:0">
+  <div class="wrap apply">
+    <div class="info">
+      <h2>Apply for work from home</h2>
+      <p class="lead">Fill in your details and our team will get back to you.</p>
+      <p><b>Phone:</b> <a href="tel:+919340424886">9340424886</a></p>
+      <p><b>Email:</b> <a href="mailto:gaurlaksharajsingh@gmail.com">gaurlaksharajsingh@gmail.com</a></p>
+      <p><b>Address:</b> MS Road, Agra</p>
+    </div>
+    <form id="f" novalidate>
+      <label for="n">Full name</label>
+      <input id="n" name="name" type="text" autocomplete="name" required placeholder="Your full name">
+      <label for="p">Mobile number</label>
+      <input id="p" name="phone" type="tel" inputmode="numeric" autocomplete="tel" required placeholder="10-digit mobile number">
+      <label for="e">Email address</label>
+      <input id="e" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+      <button class="btn primary" type="submit" style="width:100%">Send application</button>
+      <div class="msg" id="m" role="status"></div>
+      <p class="note">Your details are sent to Progress Place by email. We use them only to contact you about work.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b style="color:#fff">Progress Place</b> Digital Marketing Platform &nbsp;|&nbsp; MS Road, Agra &nbsp;|&nbsp; <a href="tel:+919340424886">9340424886</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var f=document.getElementById('f'),m=document.getElementById('m');
+  function say(t){m.textContent=t;m.style.display='block'}
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var n=f.name.value.trim(),p=f.phone.value.replace(/[\s-]/g,''),e=f.email.value.trim();
+    if(n.length<2){say('Please enter your full name.');f.name.focus();return}
+    if(!/^(\+?91)?[6-9]\d{9}$/.test(p)){say('Please enter a valid 10-digit mobile number.');f.phone.focus();return}
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){say('Please enter a valid email address.');f.email.focus();return}
+    var body='New work-from-home application\n\nName: '+n+'\nPhone: '+p+'\nEmail: '+e;
+    var url='mailto:gaurlaksharajsingh@gmail.com?subject='+encodeURIComponent('Work from home application - '+n)+'&body='+encodeURIComponent(body);
+    say('Opening your email app. Press Send there to submit your application.');
+    window.location.href=url;
+  });
+})();
+</script>
+</body>
+</html>
